@@ -12,8 +12,6 @@ import static org.hamcrest.core.Is.is;
 
 public class ApiTest {
 
-
-
     @Test
     void loginSuccessful() {
         ApiConfig apiConfig = ConfigFactory.create(ApiConfig.class, System.getProperties());
@@ -27,8 +25,5 @@ public class ApiTest {
                 .then().log().all()
                 .body("token", is(apiConfig.token()))
                 .statusCode(200);
-
     }
-
-
 }
