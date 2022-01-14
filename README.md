@@ -24,6 +24,7 @@
 
 local
 remote
-Пример командной строки для запуска тестов
+Примеры командной строки для запуска тестов
 
 gradle clean test -Dmode=local
+gradle clean test -Dmode=remote
